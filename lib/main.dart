@@ -1,4 +1,4 @@
-import 'package:emmy_ventures_app/home_page.dart';
+import 'package:emmy_ventures_app/features/home/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

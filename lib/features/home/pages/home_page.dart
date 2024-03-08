@@ -1,7 +1,7 @@
-import 'package:emmy_ventures_app/account_view.dart';
-import 'package:emmy_ventures_app/home_view.dart';
-import 'package:emmy_ventures_app/invest_view.dart';
-import 'package:emmy_ventures_app/savings_view.dart';
+import 'package:emmy_ventures_app/features/account/pages/account_view.dart';
+import 'package:emmy_ventures_app/features/home/pages/home_view.dart';
+import 'package:emmy_ventures_app/features/invest/pages/invest_view.dart';
+import 'package:emmy_ventures_app/features/savings/pages/savings_view.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -23,17 +23,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Emmy Ventures"),
-      ),
       body: listOfPages[selectedIndex],
-      floatingActionButton: FloatingActionButton(
-        shape: CircleBorder(),
-          onPressed: (){},
-        child: Icon(Icons.add),
-        foregroundColor: Colors.white,
-        backgroundColor: Colors.blue,
-      ),
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: selectedIndex,
           unselectedItemColor: Colors.blue,
